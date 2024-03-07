@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Data</title>
+</head>
+<body>
+    <h1>Form Data</h1>
+    <ul>
+        {% for item in form_data %}
+            <li>{{ item.field1 }} - {{ item.field2 }}</li>
+            <!-- Render other fields as needed -->
+        {% endfor %}
+    </ul>
+</body>
+</html>
